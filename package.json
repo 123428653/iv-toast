@@ -1,0 +1,32 @@
+{
+  "name": "iv-toast",
+  "version": "1.0.2",
+  "description": "This is Vue plugin.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123428653/iv-toast.git"
+  },
+  "keywords": [
+    "toast",
+    "vue",
+    "plugin",
+    "vue2",
+    "iv-toast"
+  ],
+  "author": "Qin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/123428653/iv-toast/issues"
+  },
+  "homepage": "https://github.com/123428653/iv-toast#readme"
+}
