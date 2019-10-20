@@ -3,7 +3,8 @@
 #### 在main.js中引入
 ```js
 import Vue from 'vue'
-import Toast 'vToast'
+import 'iv-toast/lib/index.css'
+import Toast from 'iv-toast'
 
 VUe.use(Toast)
 ```
