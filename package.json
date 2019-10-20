@@ -1,6 +1,6 @@
 {
   "name": "iv-toast",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is Vue plugin.",
   "main": "lib/index.js",
   "scripts": {
