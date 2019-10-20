@@ -1,3 +1,13 @@
+## 安装
+
+```bash
+npm install iv-toast -S
+
+or
+
+yarn add iv-toast -S
+```
+
 ## 引入
 
 #### 在main.js中引入
