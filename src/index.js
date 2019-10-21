@@ -1,10 +1,18 @@
-// import toast from './Toast'
-// import './index.css'
+/**
+* $Toast方法
+* @param {object} Toast 提供给Vue注册对象
+* @param {object} instance 子类实例化对象
+* @param {object} timer 存储弹窗的定时器对象
+*/
 const Toast = { }
 let instance
 let timer = null
 
 Toast.install = (Vue) => {
+  /**
+   * $Toast方法
+   * @param {object} options toast选项
+   */
   let $Toast = (options) => {
     
     if (!instance) {
@@ -23,6 +31,7 @@ Toast.install = (Vue) => {
           let { show, message, mask } = this
           this.className = this.type === 'text' ? 'iv-toast-' + this.type : ''
           let isLoading = this.type === 'loading'
+          // 创建VNode，并返回
           return h('transition', {
             attrs: {name: 'iv-fade'}
           },[
@@ -98,7 +107,6 @@ Toast.install = (Vue) => {
       instance.type = 'text'
     } else if (isObj) {
       let {message, duration, type, mask, closed} = options
-      console.log(mask)
       instance.type = type || 'text'
       instance.message = message
       instance.closed = closed || function () {}
@@ -107,7 +115,6 @@ Toast.install = (Vue) => {
     } else {
       return
     }
-    // instance.openOverlay()
     instance.show = true
     if (options.duration == 0) {
     } else {
